@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>web-service-run</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<parent>
+		<groupId>com.wen.data.mart</groupId>
+		<artifactId>wen-data-mart-web-service</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.wen.data.mart</groupId>
+			<artifactId>web-service-business</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>com.wen.data.mart</groupId>
+			<artifactId>web-service-system</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+
+	</dependencies>
+
+
+	<profiles>
+		<profile>
+			<id>dev</id>
+			<properties>
+				<profiles.active>application-dev</profiles.active>
+			</properties>
+		</profile>
+		<profile>
+			<id>sit</id>
+			<properties>
+				<profiles.active>application-sit</profiles.active>
+			</properties>
+		</profile>
+		<profile>
+			<id>stg</id>
+			<properties>
+				<profiles.active>application-stg</profiles.active>
+			</properties>
+		</profile>
+		<profile>
+			<id>prd</id>
+			<properties>
+				<profiles.active>application-prd</profiles.active>
+			</properties>
+		</profile>
+	</profiles>
+
+<!--	<build>-->
+<!--        <plugins>-->
+<!--			<plugin>-->
+<!--				<groupId>org.springframework.boot</groupId>-->
+<!--				<artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--				<configuration>-->
+<!--					<mainClass>com.wen.data.mart.MartApplication</mainClass>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-dependency-plugin</artifactId>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>unpack</id>-->
+<!--						<goals>-->
+<!--							<goal>-->
+<!--								unpack-->
+<!--							</goal>-->
+<!--						</goals>-->
+<!--						<configuration>-->
+<!--							<artifactItems>-->
+<!--								<artifactItem>-->
+<!--									<groupId>com.vip.saturn</groupId>-->
+<!--									<artifactId>saturn-executor</artifactId>-->
+<!--									<version>${saturn.version}</version>-->
+<!--									<classifier>zip</classifier>-->
+<!--									<type>zip</type>-->
+<!--									<outputDirectory>${project.build.directory}</outputDirectory>-->
+<!--								</artifactItem>-->
+<!--							</artifactItems>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-jar-plugin</artifactId>-->
+<!--				<configuration>-->
+<!--					<excludes>-->
+<!--						<exclude>file/*.xlsx</exclude>-->
+<!--						<exclude>*.properties</exclude>-->
+<!--						<exclude>*.yml</exclude>-->
+<!--						<exclude>*.yaml</exclude>-->
+<!--					</excludes>-->
+<!--				</configuration>-->
+<!--			</plugin>-->
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-assembly-plugin</artifactId>-->
+<!--				<configuration>-->
+<!--					<appendAssemblyId>false</appendAssemblyId>-->
+<!--				</configuration>-->
+<!--				<executions>-->
+<!--					<execution>-->
+<!--						<id>make-assembly</id>-->
+<!--						<phase>package</phase>-->
+<!--						<goals>-->
+<!--							<goal>-->
+<!--								single-->
+<!--							</goal>-->
+<!--						</goals>-->
+<!--						<configuration>-->
+<!--							<skipAssembly>false</skipAssembly>-->
+<!--							<descriptors>-->
+<!--								<descriptor>src/main/assembly/assembly.xml</descriptor>-->
+<!--							</descriptors>-->
+<!--							<finalName>${project.artifactId}</finalName>-->
+<!--						</configuration>-->
+<!--					</execution>-->
+<!--				</executions>-->
+<!--			</plugin>-->
+<!--		</plugins>-->
+<!--	</build>-->
+
+</project>

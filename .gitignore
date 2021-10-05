@@ -1,0 +1,5 @@
+# Project exclude paths
+/wen-data-mart-web-service/web-service-business/target/
+/wen-data-mart-web-service/web-service-common/target/
+/wen-data-mart-web-service/web-service-run/target/
+/wen-data-mart-web-service/web-service-system/target/

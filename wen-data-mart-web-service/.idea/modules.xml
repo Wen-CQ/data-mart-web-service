@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/data-mart-web-service.iml" filepath="$PROJECT_DIR$/.idea/data-mart-web-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-service-business/web-service-business.iml" filepath="$PROJECT_DIR$/web-service-business/web-service-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-service-common/web-service-common.iml" filepath="$PROJECT_DIR$/web-service-common/web-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-service-run/web-service-run.iml" filepath="$PROJECT_DIR$/web-service-run/web-service-run.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-service-system/web-service-system.iml" filepath="$PROJECT_DIR$/web-service-system/web-service-system.iml" />
+    </modules>
+  </component>
+</project>

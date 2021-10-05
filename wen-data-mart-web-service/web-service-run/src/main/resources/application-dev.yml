@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: wen-data-mart-web-service
+  main:
+    allow-bean-definition-overriding: true
+
+app:
+  id: ${spring.application.name}
+apollo:
+   meta: http://159.75.34.66:8090
+   bootstrap:
+     enabled: true
+
+#   datasource:
+#     # 可以先在这里配置好通用的配置,比如
+#     druid:
+#       initial-size: 10
+#       max-active: 100
+#       min-idle: 3
+#       max-wait: 5000
+#       pool-prepared-statements: true
+#       max-pool-prepared-statement-per-connection-size: 100
+#     #dynamic开始多数据源配置
+#     dynamic:
+#       primary: master #设置默认的数据源或者数据源组,默认值即为master
+#       datasource:
+#         master:  # 数据源的名字:master
+#           url: jdbc:mysql://159.75.34.66:3307/master?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#           username: root
+#           password: root
+#           driver-class-name: com.mysql.cj.jdbc.Driver
+#           type: com.alibaba.druid.pool.DruidDataSource
+#         slave:   # 数据源的名字:slave
+#           url: jdbc:mysql://159.75.34.66:3307/slave?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+#           username: root
+#           password: root
+#           driver-class-name: com.mysql.cj.jdbc.Driver
+#           type: com.alibaba.druid.pool.DruidDataSource
+

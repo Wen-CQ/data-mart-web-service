@@ -1,0 +1,25 @@
+
+server:
+  port: 8080
+
+  app:
+    id: wen-data-mart-web-service
+  apollo:
+    meta: http://159.75.34.66:8080
+  bootstrap:
+    enabled: true
+    namespaces: application
+
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      datasource:
+           master:
+             url: jdbc:mysql://159.75.34.66:3307/master?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+             driver-class-name: com.mysql.cj.jdbc.Driver
+             username: root
+             password: root
+
+
+

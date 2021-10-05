@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/iws-data-mart-service.iml" filepath="$PROJECT_DIR$/.idea/iws-data-mart-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wen-data-mart-web-service/web-service-business/web-service-business.iml" filepath="$PROJECT_DIR$/wen-data-mart-web-service/web-service-business/web-service-business.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wen-data-mart-web-service/web-service-common/web-service-common.iml" filepath="$PROJECT_DIR$/wen-data-mart-web-service/web-service-common/web-service-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wen-data-mart-web-service/web-service-run/web-service-run.iml" filepath="$PROJECT_DIR$/wen-data-mart-web-service/web-service-run/web-service-run.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wen-data-mart-web-service/web-service-system/web-service-system.iml" filepath="$PROJECT_DIR$/wen-data-mart-web-service/web-service-system/web-service-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wen-data-mart-web-service/wen-data-mart-web-service.iml" filepath="$PROJECT_DIR$/wen-data-mart-web-service/wen-data-mart-web-service.iml" />
+    </modules>
+  </component>
+</project>
